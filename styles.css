@@ -93,3 +93,25 @@ line-height: 0.8;
   color: white;
 }
 
+.targets{
+	display: flex;
+}
+
+.tarText{ 
+	flex:1;
+}
+
+.mts{
+		
+	padding-top: 50px;
+
+}
+
+.text{
+display: block;
+margin: 0;
+justify-content: center;
+align-items: center;
+width:100%;
+
+}
