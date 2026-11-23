@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Industry | Build 2030 (SDG 9)</title>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+		<link href="styles.css" rel="stylesheet">
+		<script src="external.js"></script>
+	</head>
+	<body id="pageBody">
+		<nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+			<div class="container">
+				<a class="navbar-brand d-flex align-items-center" href="index.html">
+					<img src="1.png" alt="Build 2030 Logo" class="nav-logo me-2">
+					<span>Build 2030 | SDG 9</span>
+				</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#sdgNavbar" aria-controls="sdgNavbar" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="sdgNavbar">
+					<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a class="nav-link " href="index.html">1. Home & Targets</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link " href="infrastructure.html">2. Infrastructure</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link active" href="industry.html">3. Industry</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link " href="innovation.html">4. Innovation</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								Page Sections
+							</a>
+							<ul class="dropdown-menu dropdown-menu-end">
+								<li><a class="dropdown-item" href="#info-section">Reading & Facts</a></li>
+								<li><a class="dropdown-item" href="#interactive-section">Interactive Tools</a></li>
+								<li><a class="dropdown-item" href="#news">Night Mode Controls</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<header>
+			<img src="1.png" alt="Build 2030 Logo">
+			<h1>Pillar 2: Clean & Inclusive Industry</h1>
+			<p>Clean Manufacturing & SME Support (Targets 9.2, 9.3 & 9.4)</p>
+		</header>
+
+		<main id="info-section">
+			<section class="card">
+				<h2>Manufacturing Trends & Clean Energy Deployment</h2>
+				<p>Globally, manufacturing and trade have rebounded since the pandemic, though ongoing supply chain disruptions, trade tensions and geopolitical instability continue to drive up costs. Global manufacturing value added (MVA) per capita rose by 18.1% between 2015 and 2025. Global manufacturing growth slowed down to 2.7 per cent in 2022, down from 7.4 per cent in 2021, and rebounded to 3 per cent in 2024 and rose a further 2.7 per cent in 2025. The share of manufacturing employment in total employment was 13.7 per cent in 2025, down from 14.3 per cent in 2015.</p>
+				<p>In 2024, global carbon dioxide (CO2) emissions from fuel combustion and industrial processes surged to a new all-time high of 38.1 gigatons, reverting to a decade-long trend of decoupling emissions and economic growth.</p>
+				<p>On a positive note, clean energy deployment is actively helping to limit emissions. Since 2019, the rapid expansion of solar power, wind energy, nuclear power, electric vehicles, and heat pumps prevented an estimated 3 gigatons of CO2 emissions in 2025 alone—representing roughly 8% of global energy-related emissions.</p>
+			</section>
+
+			<section class="card">
+				<h2>How Can We Help?</h2>
+				<p>You can take action by establishing clear standards and promoting regulations that ensure your own workplace projects are sustainably managed.</p>
+				<p>Collaborating with NGOs and the public sector is another powerful way to promote sustainable growth within developing countries.</p>
+				<p>Finally, consider how local industries impact your daily well-being, and use your voice on social media to push policymakers to prioritize the SDGs.</p>
+			</section>
+
+			<h2 class="section-divider" id="interactive-section">Interactive Industry Features</h2>
+
+			<section class="card">
+				<h2>1. Factory Retrofit Calculator</h2>
+				<p>Calculate live CO2 savings when factories deploy solar power, heat pumps/recovery, and electric vehicles:</p>
+				<p id="demo">Click below to calculate your factory's annual CO2 reduction</p>
+				<button type="button" onclick="retrofitCalculator()">Launch Retrofit Calculator</button>
+			</section>
+
+			<section class="card">
+				<h2>2. SME Sustainable Workplace Action Steps (Target 9.3)</h2>
+				<ul class="list hideList" id="menu">
+					<li><strong>Step 1:</strong> Establish clear standards to ensure workplace projects are sustainably managed.</li>
+					<li><strong>Step 2:</strong> Apply for low-interest green micro-credit for solar roofing and heat pumps.</li>
+					<li><strong>Step 3:</strong> Collaborate with NGOs and the public sector to support developing countries.</li>
+					<li><strong>Step 4:</strong> Transition factory delivery fleets to electric vehicles to help cut the 38.1 gigatons of global CO2 emissions.</li>
+				</ul>
+				<button type="button" onmouseover="changeCas()" onclick="hide()">Hover to view SME Action Steps / Click to hide</button>
+			</section>
+
+			<section class="card">
+				<h2>3. Register a Sustainable Workplace Project</h2>
+				<form>
+					<label>Project Lead Name:</label><br>
+					<input name="ownerName" type="text"><br>
+					<label>Enterprise / NGO Name:</label><br>
+					<input name="factoryName" type="text"><br>
+					<label>County / Region:</label><br>
+					<input name="county" type="text">
+				</form>
+			</section>
+
+			<section class="card" id="news">
+				<h2>4. Decoupling Emissions & Whole-Website Night Mode</h2>
+				<p id="newsText">By scaling solar power, wind energy, electric vehicles, and heat pumps across small and medium enterprises, industries can generate decent jobs and stable incomes while actively protecting the environment.</p>
+				<button type="button" onclick="bigtext()">Bigger text</button>
+				<button type="button" onclick="nightMode()">Night mode</button>
+				<button type="button" onclick="reset()">Reset</button>
+			</section>
+		</main>
+
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+	</body>
+</html>

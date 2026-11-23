@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Home & Targets | Build 2030 (SDG 9)</title>
+		<!-- link to Bootstrap 5 CSS framework for the responsive navbar menu -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+		<!-- link to our external CSS file (styles.css) -->
+		<link href="styles.css" rel="stylesheet">
+		<!-- link to our external JavaScript file (external.js) -->
+		<script src="external.js"></script>
+	</head>
+	<!-- id="pageBody" lets JavaScript switch the whole webpage into night mode -->
+	<body id="pageBody">
+		<!-- Bootstrap 5 responsive navigation bar with mobile hamburger button and dropdown -->
+		<nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+			<div class="container">
+				<!-- brand logo and website title -->
+				<a class="navbar-brand d-flex align-items-center" href="index.html">
+					<img src="1.png" alt="Build 2030 Logo" class="nav-logo me-2">
+					<span>Build 2030 | SDG 9</span>
+				</a>
+				<!-- mobile menu toggle button -->
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#sdgNavbar" aria-controls="sdgNavbar" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<!-- navigation links to all 4 pages plus a dropdown menu for page sections -->
+				<div class="collapse navbar-collapse" id="sdgNavbar">
+					<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a class="nav-link active" href="index.html">1. Home & Targets</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="infrastructure.html">2. Infrastructure</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="industry.html">3. Industry</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="innovation.html">4. Innovation</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								Page Sections
+							</a>
+							<ul class="dropdown-menu dropdown-menu-end">
+								<li><a class="dropdown-item" href="#info-section">Reading & Facts</a></li>
+								<li><a class="dropdown-item" href="#interactive-section">Interactive Tools</a></li>
+								<li><a class="dropdown-item" href="#news">Night Mode Controls</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<!-- top hero header banner -->
+		<header>
+			<img src="1.png" alt="Build 2030 Logo">
+			<h1>Build 2030: UN SDG 9 Showcase</h1>
+			<p>Industry, Innovation, and Infrastructure — The 17 Goals</p>
+		</header>
+
+		<!-- main page container holding the reading cards and interactive JavaScript cards -->
+		<main id="info-section">
+			<!-- Card 1: UN SDG 9 overview text -->
+			<section class="card">
+				<h2>Overview: UN Sustainable Development Goal 9</h2>
+				<p>Goal 9 seeks to build resilient infrastructure, promote sustainable industrialization, and foster innovation. Economic growth, social development, and climate action depend heavily on these investments. In a rapidly changing global landscape, sustained growth must prioritize industrialization that is accessible to all, supported by cutting-edge innovation, and anchored by resilient infrastructure.</p>
+				<p>Globally, manufacturing and trade have rebounded since the pandemic. However, ongoing supply chain disruptions, trade tensions and geopolitical instability continue to drive up costs.</p>
+				<p>On a positive note, clean energy deployment is actively helping to limit emissions. Since 2019, the rapid expansion of solar power, wind energy, nuclear power, electric vehicles, and heat pumps prevented an estimated 3 gigatons of CO2 emissions in 2025 alone—representing roughly 8% of global energy-related emissions.</p>
+			</section>
+
+			<!-- Card 2: Why should I care & What is the price of inaction -->
+			<section class="card">
+				<h2>Why Should I Care & What Is the Price of Inaction?</h2>
+				<h3>Why should I care?</h3>
+				<p>Sustainable industrialization, innovation and infrastructure unleash competitive economic forces that generate decent jobs and stable incomes. They are key to introducing new technologies, facilitating international trade and using resources more efficiently. As industries adopt sustainable practices, they raise our collective standard of living while actively protecting the environment.</p>
+				<h3>What is the price of inaction?</h3>
+				<p>The price of inaction is steep. Failing to support sustainable industries makes ending global poverty far more difficult, as industrial growth is a primary driver of the development agenda. Furthermore, without improvements to infrastructure and technology, communities will continue to struggle with poor healthcare, inadequate sanitation and limited access to education.</p>
+			</section>
+
+			<!-- Card 3: Unordered list (ul/li) of SDG 9 facts and figures -->
+			<section class="card">
+				<h2>Facts and Figures (The Sustainable Development Goals Report 2026)</h2>
+				<ul>
+					<li>Global manufacturing growth slowed down to 2.7 per cent in 2022, down from 7.4 per cent in 2021, and rebounded to 3 per cent in 2024 and rose a further 2.7 per cent in 2025.</li>
+					<li>In 2024, global seaborne trade neared a record high, reaching an estimated 24.1 billion metric tons – 16 per cent higher than in 2015.</li>
+					<li>As of 2024, 96 per cent of the world’s population was within reach of a mobile broadband network, but some areas remain underserved.</li>
+					<li>In 2024, global carbon dioxide (CO2) emissions from fuel combustion and industrial processes surged to a new all-time high of 38.1 gigatons, reverting to a decade-long trend of decoupling emissions and economic growth.</li>
+					<li>The share of manufacturing employment in total employment was 13.7 per cent in 2025, down from 14.3 per cent in 2015.</li>
+				</ul>
+				<p><em>Source: The Sustainable Development Goals Report 2026</em></p>
+			</section>
+
+			<!-- divider heading separating reading content from interactive JavaScript tools -->
+			<h2 class="section-divider" id="interactive-section">Interactive SDG 9 Features</h2>
+
+			<!-- Interactive Feature 1: generates a random number (0-9) and changes #demo background color with .style -->
+			<section class="card">
+				<h2>1. Interactive SDG 9 Priority Score Generator</h2>
+				<p id="demo">Click below to generate a random SDG 9 priority score</p>
+				<!-- onclick event calls randomTarget() from external.js -->
+				<button type="button" onclick="randomTarget()">Click to see a random score</button>
+			</section>
+
+			<!-- Interactive Feature 2: shows and hides the 8 targets by swapping hideList and showList classes -->
+			<section class="card">
+				<h2>2. Interactive Goal 9 Targets Filter (9.1 - 9.c)</h2>
+				<p>Hover over the button to reveal the 8 official UN SDG 9 targets, and click to hide them:</p>
+				<!-- the list starts hidden because of the hideList class -->
+				<ul class="list hideList" id="menu">
+					<li><strong>Target 9.1:</strong> Develop sustainable, resilient, and inclusive infrastructure.</li>
+					<li><strong>Target 9.2:</strong> Promote inclusive and sustainable industrialization.</li>
+					<li><strong>Target 9.3:</strong> Increase small-scale industrial access to financial services and credit.</li>
+					<li><strong>Target 9.4:</strong> Upgrade infrastructure and retrofit industries for clean resource efficiency.</li>
+					<li><strong>Target 9.5:</strong> Enhance scientific research and technological capabilities.</li>
+					<li><strong>Target 9.a:</strong> Facilitate sustainable infrastructure support for developing countries.</li>
+					<li><strong>Target 9.b:</strong> Support domestic technology development and industrial diversification.</li>
+					<li><strong>Target 9.c:</strong> Significantly increase universal and affordable access to ICT and the internet.</li>
+				</ul>
+				<!-- onmouseover reveals the list and onclick hides it again -->
+				<button type="button" onmouseover="changeCas()" onclick="hide()">Hover to show Goal 9 targets / Click to hide</button>
+			</section>
+
+			<!-- Interactive Feature 3: uses a JavaScript for loop and document.write() to print the 3 core pillars -->
+			<section class="card">
+				<h2>3. The Three Core Pillars of Goal 9</h2>
+				<script>
+					for (x = 1; x <= 3; x++) {
+						document.write("<p><strong>Pillar " + x + ":</strong> Core 2030 SDG 9 Milestone #" + x + "</p>");
+					}
+				</script>
+			</section>
+
+			<!-- Interactive Feature 4: enlarges text, switches the whole website into Night Mode, or resets styles -->
+			<section class="card" id="news">
+				<h2>4. Reader Accessibility & Whole-Website Night Mode</h2>
+				<p id="newsText">Share this story and choose your platform! By 2030, our mission is to bridge the global connectivity divide, retrofit aging factories with clean energy, and support sustainable growth across all 17 Goals.</p>
+				<!-- onclick events to enlarge text, enable whole-website night mode, or reset -->
+				<button type="button" onclick="bigtext()">Bigger text</button>
+				<button type="button" onclick="nightMode()">Night mode</button>
+				<button type="button" onclick="reset()">Reset</button>
+			</section>
+		</main>
+
+		<!-- Bootstrap 5 JavaScript bundle needed for the mobile navbar toggle and dropdown menu -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+	</body>
+</html>

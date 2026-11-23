@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Innovation | Build 2030 (SDG 9)</title>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+		<link href="styles.css" rel="stylesheet">
+		<script src="external.js"></script>
+	</head>
+	<body id="pageBody">
+		<nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+			<div class="container">
+				<a class="navbar-brand d-flex align-items-center" href="index.html">
+					<img src="1.png" alt="Build 2030 Logo" class="nav-logo me-2">
+					<span>Build 2030 | SDG 9</span>
+				</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#sdgNavbar" aria-controls="sdgNavbar" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="sdgNavbar">
+					<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a class="nav-link " href="index.html">1. Home & Targets</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link " href="infrastructure.html">2. Infrastructure</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link " href="industry.html">3. Industry</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link active" href="innovation.html">4. Innovation</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								Page Sections
+							</a>
+							<ul class="dropdown-menu dropdown-menu-end">
+								<li><a class="dropdown-item" href="#info-section">Reading & Facts</a></li>
+								<li><a class="dropdown-item" href="#interactive-section">Interactive Tools</a></li>
+								<li><a class="dropdown-item" href="#news">Night Mode Controls</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<header>
+			<img src="1.png" alt="Build 2030 Logo">
+			<h1>Pillar 3: Innovation & Future Tech</h1>
+			<p>R&D, AI Governance & Digital Technology (Targets 9.5, 9.a & 9.b)</p>
+		</header>
+
+		<main id="info-section">
+			<section class="card">
+				<h2>Related News: UN Digital Technology & AI Governance</h2>
+				<h3>UN calls for urgent action to enable opportunities, mitigate risks for information and digital technology (12 Oct 2023)</h3>
+				<p>Recognizing both the opportunities and risks offered by rapid advancements in information and digital technology, the 18th Internet Governance Forum (IGF) wrapped up its series of high-level discussions and multistakeholder dialogues in Kyoto, Japan today.</p>
+
+				<h3>Leveraging benefits of rapid advances in artificial intelligence and digitalisation, while mitigating risks underpins UN Forum on Internet Governance (09 Oct 2023)</h3>
+				<p>Against a backdrop of growing geopolitical tensions, proliferating crises and widening inequalities, the challenges facing the global community in reaching the 2030 Agenda for Sustainable Development are vast. With the Internet holding a critical role in navigating these complexities, the 18th UN Internet Governance Forum (IGF) got underway in Kyoto, Japan today under the overarching theme, ‘The Internet We Want – Empowering All People’.</p>
+
+				<h3>Internet Governance Forum: We must act now to tackle the threats of cyberspace (29 Nov 2019)</h3>
+				<p>Global efforts need to be stepped up to address an increase in cross-border cyberattacks, hate speech and security breaches, according to the more than 6,000 delegates that took part in the Internet Governance Forum (IGF) that concluded today in Berlin.</p>
+			</section>
+
+			<section class="card">
+				<h2>Related Videos & Global Innovation Spotlights</h2>
+				<ul>
+					<li><strong>ECOSOC Youth Forum:</strong> Robotics Team, SDG Media Zone – ECOSOC Youth Forum 2018</li>
+					<li><strong>#SDGLive at #WEF18:</strong> Digital Technology and Trade for Global Growth</li>
+					<li><strong>#SDGLive at #WEF18:</strong> Innovative Financing for HER</li>
+				</ul>
+				<p><em>Infographic: Industry, Innovation and Infrastructure — Share this story, choose your platform!</em></p>
+			</section>
+
+			<h2 class="section-divider" id="interactive-section">Interactive Innovation Features</h2>
+
+			<section class="card">
+				<h2>1. 2030 Budget Allocator</h2>
+				<p>Split your budget across R&D labs, rural 5G, and clean-tech grants to calculate your final <strong>2030 Readiness Score</strong>:</p>
+				<p id="demo">Click below to allocate your 2030 innovation budget</p>
+				<button type="button" onclick="budgetAllocator()">Calculate 2030 Readiness Score</button>
+			</section>
+
+			<section class="card">
+				<h2>2. Breakthrough Green & Digital Tech Spotlights</h2>
+				<ul class="list hideList" id="menu">
+					<li><strong>Clean Energy Tech:</strong> Solar, wind, EVs, and heat pumps prevented 3 gigatons of CO2 in 2025.</li>
+					<li><strong>AI & Digitalisation:</strong> Empowering all people while mitigating cyber risks and widening inequalities.</li>
+					<li><strong>Youth Robotics & R&D:</strong> Supporting Least Developed Countries (LDCs) with advanced technology transfer.</li>
+				</ul>
+				<button type="button" onmouseover="changeCas()" onclick="hide()">Hover to see Tech Spotlights / Click to hide</button>
+			</section>
+
+			<section class="card">
+				<h2>3. Least Developed Countries (LDCs) Tech-Transfer Loop</h2>
+				<p>Use our interactive grant loop to send clean-tech transfer packages to developing nations:</p>
+				<button type="button" onclick="techTransferLoop()">Send Tech-Transfer Grants</button>
+			</section>
+
+			<section class="card" id="news">
+				<h2>4. The Internet We Want & Whole-Website Night Mode</h2>
+				<p id="newsText">By combining advanced technologies, cybersecurity resilience, and inclusive financing, Goal 9 ensures that innovation serves every community on the path to 2030.</p>
+				<button type="button" onclick="bigtext()">Bigger text</button>
+				<button type="button" onclick="nightMode()">Night mode</button>
+				<button type="button" onclick="reset()">Reset</button>
+			</section>
+		</main>
+
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+	</body>
+</html>

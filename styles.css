@@ -1,0 +1,269 @@
+body{
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #FFFFFF;
+	color: #111827;
+	line-height: 1.6;
+}
+
+/* ---------- Bootstrap Navbar Menu ---------- */
+.custom-navbar{
+	background-color: #111827;
+	border-bottom: 4px solid #FF5600;
+	padding: 12px 0;
+}
+
+.custom-navbar .navbar-brand{
+	color: #FFFFFF;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.custom-navbar .navbar-brand:hover{
+	color: #FF5600;
+}
+
+.nav-logo{
+	height: 44px;
+	width: auto;
+	border-radius: 6px;
+	border: 2px solid #FF5600;
+	margin-bottom: 0;
+	display: inline-block;
+}
+
+.custom-navbar .nav-link{
+	color: #FFFFFF !important;
+	font-weight: bold;
+	padding: 8px 14px !important;
+	margin: 0 3px;
+	border-radius: 6px;
+	transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.custom-navbar .nav-link:hover,
+.custom-navbar .nav-link.active{
+	color: #FFFFFF !important;
+	background-color: #FF5600;
+}
+
+.custom-navbar .dropdown-menu{
+	background-color: #111827;
+	border: 2px solid #FF5600;
+}
+
+.custom-navbar .dropdown-item{
+	color: #FFFFFF;
+	font-weight: bold;
+}
+
+.custom-navbar .dropdown-item:hover{
+	background-color: #FF5600;
+	color: #FFFFFF;
+}
+
+/* ---------- Header Banner ---------- */
+header{
+	background-color: #FF5600;
+	color: #FFFFFF;
+	text-align: center;
+	padding: 28px 20px;
+	border-bottom: 6px solid #111827;
+}
+
+header h1{
+	margin: 10px 0 5px 0;
+	color: #111827;
+	font-weight: bold;
+}
+
+header p{
+	margin: 0;
+	color: #FFFFFF;
+	font-size: 18px;
+}
+
+header img{
+	display: inline-block;
+	height: 85px;
+	border-radius: 10px;
+	margin-bottom: 5px;
+	border: 3px solid #111827;
+}
+
+/* ---------- Layout ---------- */
+main{
+	max-width: 850px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+.section-divider{
+	background-color: #FF5600;
+	color: #FFFFFF;
+	padding: 12px 18px;
+	border-left: 6px solid #111827;
+	border-radius: 6px;
+	margin: 30px 0 20px 0;
+	font-weight: bold;
+}
+
+.card{
+	background-color: #FFFFFF;
+	color: #111827;
+	border: 2px solid #FF5600;
+	border-top: 6px solid #111827;
+	border-radius: 10px;
+	padding: 20px;
+	margin-bottom: 20px;
+}
+
+.card h2{
+	margin-top: 0;
+	color: #111827;
+	font-weight: bold;
+}
+
+.card h3{
+	color: #FF5600;
+	margin-bottom: 6px;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+/* ---------- Interactive Action Buttons ---------- */
+button{
+	background-color: #111827;
+	color: #FFFFFF;
+	border: 2px solid #111827;
+	border-radius: 6px;
+	padding: 10px 16px;
+	font-size: 16px;
+	font-weight: bold;
+	cursor: pointer;
+	margin: 4px 4px 4px 0;
+}
+
+button:hover{
+	background-color: #FF5600;
+	color: #FFFFFF;
+	border: 2px solid #FF5600;
+}
+
+/* ---------- Interactive Demo Box ---------- */
+#demo{
+	background-color: #FFFFFF;
+	color: #FF5600;
+	border: 2px dashed #111827;
+	padding: 20px;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	border-radius: 6px;
+}
+
+/* ---------- Show and Hide List ---------- */
+.list{
+	color: #111827;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.hideList{
+	display: none;
+}
+
+.showList{
+	display: block;
+}
+
+/* ---------- Picture Swap ---------- */
+#img-swap{
+	display: block;
+	height: 150px;
+	margin-bottom: 15px;
+	border-radius: 8px;
+}
+
+/* ---------- News Text ---------- */
+#newsText{
+	font-size: 16px;
+	line-height: 1.6;
+}
+
+input[type="text"]{
+	padding: 8px;
+	border: 2px solid #FF5600;
+	border-radius: 5px;
+	margin-top: 4px;
+	margin-bottom: 10px;
+	color: #111827;
+	background-color: #FFFFFF;
+}
+
+/* ---------- Whole-Website Night Mode (.night on body) ---------- */
+body.night{
+	background-color: #111827;
+	color: #FFFFFF;
+}
+
+.night header{
+	background-color: #111827;
+	border-bottom: 6px solid #FF5600;
+}
+
+.night header h1{
+	color: #FF5600;
+}
+
+.night header img{
+	border-color: #FF5600;
+}
+
+.night .section-divider{
+	background-color: #FF5600;
+	color: #111827;
+	border-left: 6px solid #FFFFFF;
+}
+
+.night .card{
+	background-color: #111827;
+	color: #FFFFFF;
+	border: 2px solid #FF5600;
+	border-top: 6px solid #FF5600;
+}
+
+.night .card h2{
+	color: #FF5600;
+}
+
+.night .card h3{
+	color: #FFFFFF;
+}
+
+.night #demo{
+	background-color: #111827;
+	color: #FFFFFF;
+	border: 2px dashed #FF5600;
+}
+
+.night .list{
+	color: #FFFFFF !important;
+}
+
+.night button{
+	background-color: #FF5600;
+	color: #FFFFFF;
+	border: 2px solid #FF5600;
+}
+
+.night button:hover{
+	background-color: #FFFFFF;
+	color: #111827;
+	border: 2px solid #FFFFFF;
+}
+
+.night input[type="text"]{
+	background-color: #111827;
+	color: #FFFFFF;
+	border: 2px solid #FF5600;
+}
